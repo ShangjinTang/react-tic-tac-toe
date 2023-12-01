@@ -1,26 +1,29 @@
-import React from 'react';
+import React, {StrictMode} from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Content from "./Content";
+
+
+function ReactHeader() {
+    return (
+        <div className="App-header">
+            <h1 style={{fontSize: "40px"}}>Powered by React</h1>
+            <img src={logo} className="App-logo" alt="logo"/>
+        </div>
+
+    )
+}
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <>
+            <StrictMode>
+                <ReactHeader></ReactHeader>
+                <Content></Content>
+            </StrictMode>
+
+        </>
+    );
 }
 
 export default App;

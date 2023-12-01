@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# React Tic-Tac-Toe
+
+[React Tic-Tac-Toe](https://react.dev/learn/tutorial-tic-tac-toe) with TypeScript.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
